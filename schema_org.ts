@@ -1,3 +1,4 @@
+import { Clip } from "./things/creative_works/clips/clip.ts";
 import { VideoObjectType } from "./things/creative_works/media_objects/video_objects/video_object.ts";
 import { AdministrativeAreaType } from "./things/places/administrative_areas/administrative_area.ts";
 import { MusicComposition } from "./things/creative_works/music_composition.ts";
@@ -50,6 +51,7 @@ type SchemaOrg =
     | DeepPartial<MusicComposition>
     | DeepPartial<AdministrativeAreaType>
     | DeepPartial<VideoObjectType>
+    | DeepPartial<Clip>
   );
 
 export default SchemaOrg;
