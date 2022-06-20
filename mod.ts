@@ -1,1 +1,1 @@
-export type { default as SchemaOrg } from "./shema_org.ts";
+export type { default as SchemaOrg } from "./schema_org.ts";
