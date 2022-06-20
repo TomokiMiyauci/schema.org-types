@@ -1,3 +1,4 @@
+import { LocationFeatureSpecification } from "./things/intangibles/structured_values/property_values/location_feature_specification.ts";
 import { PostalAddress } from "./things/intangibles/structured_values/contact_points/postal_address.ts";
 import { Place } from "./things/places/place.ts";
 import { Episode } from "./things/creative_works/episodes/episode.ts";
@@ -58,6 +59,7 @@ type SchemaOrg =
     | DeepPartial<Episode>
     | DeepPartial<Place>
     | DeepPartial<PostalAddress>
+    | DeepPartial<LocationFeatureSpecification>
   );
 
 export default SchemaOrg;
