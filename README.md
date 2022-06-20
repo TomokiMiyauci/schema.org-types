@@ -6,9 +6,9 @@ Definition of types of [Schema.org](https://schema.org/) with
 ## Example
 
 ```tsx
-import { SchemaOrg } from "https://deno.land/x/schema_org_types/mod.ts";
+import { SchemaOrg } from "https://deno.land/x/schema_org_types@$VERSION/mod.ts";
 const schemaOrg: SchemaOrg = {
-  "@context": "https://schema.org/",
+  "@context": "https://schema.org",
   "@type": "Thing",
   name: "Schema.org Ontology",
   subjectOf: {
@@ -16,8 +16,7 @@ const schemaOrg: SchemaOrg = {
     name: "The Complete History of Schema.org",
   },
 };
-
-<script type="application/ld+json">
-  {JSON.stringify(schemaOrg, null, 2)};
-</script>;
+// <script type="application/ld+json">
+//  {JSON.stringify(schemaOrg, null, 2)};
+// </script>;
 ```
