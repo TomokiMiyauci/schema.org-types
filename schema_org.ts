@@ -7,6 +7,7 @@ import { AggregateRating } from "./things/intangibles/ratings/aggregate_ratings/
 import { DefinedTermSet } from "./things/creative_works/defined_term_sets/defined_term_set.ts";
 import { DefinedTerm } from "./things/intangibles/defined_terms/defined_term.ts";
 import { Audience } from "./things/intangibles/audiences/audience.ts";
+import { AudioObject } from "./things/creative_works/media_objects/audio_objects/audio_object.ts";
 
 type DeepPartial<T> = {
   readonly [P in keyof T]?: keyof T[P] extends never ? T[P] : DeepPartial<T[P]>;
@@ -24,6 +25,7 @@ type SchemaOrg =
     | DeepPartial<DefinedTermSet>
     | DeepPartial<DefinedTerm>
     | DeepPartial<Audience>
+    | DeepPartial<AudioObject>
   );
 
 export default SchemaOrg;
