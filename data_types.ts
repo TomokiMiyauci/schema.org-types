@@ -35,3 +35,8 @@ export type Integer = number;
  * @see https://schema.org/Date
  */
 export type Date = string;
+
+/** Boolean: `true` or `false`.
+ * @see https://schema.org/Boolean
+ */
+export type Boolean = true | false;

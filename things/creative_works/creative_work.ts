@@ -1,5 +1,6 @@
 import { ThingProps, ThingType } from "../thing.ts";
 import { AmpStory } from "./amp_story.ts";
+import { BookType } from "./books/book.ts";
 
 export interface CreativeWorkProps extends ThingProps {
   /** The subject matter of the content.
@@ -15,4 +16,4 @@ export interface CreativeWork extends CreativeWorkProps {
   "@type": "CreativeWork";
 }
 
-export type CreativeWorkType = CreativeWork | AmpStory;
+export type CreativeWorkType = CreativeWork | AmpStory | BookType;
