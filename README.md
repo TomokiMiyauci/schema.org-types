@@ -1,6 +1,7 @@
-# schema-org-types
+# schema.org-types
 
-Definition of types of [Schema.org](https://schema.org/) with JSON-LD.
+Definition of types of [Schema.org](https://schema.org/) with
+[JSON-LD](https://json-ld.org/).
 
 ## Example
 
