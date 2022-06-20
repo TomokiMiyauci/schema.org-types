@@ -3,6 +3,7 @@ import { BreadcrumbList } from "./things/creative_works/item_lists/breadcrumb_li
 import { WebPage } from "./things/creative_works/web_page.ts";
 import { Book } from "./things/creative_works/books/book.ts";
 import { Rating } from "./things/intangibles/ratings/rating.ts";
+import { AggregateRating } from "./things/intangibles/ratings/aggregate_ratings/aggregate_rating.ts";
 
 type DeepPartial<T> = {
   readonly [P in keyof T]?: keyof T[P] extends never ? T[P] : DeepPartial<T[P]>;
@@ -16,6 +17,7 @@ type SchemaOrg =
     | DeepPartial<WebPage>
     | DeepPartial<Book>
     | DeepPartial<Rating>
+    | DeepPartial<AggregateRating>
   );
 
 export default SchemaOrg;
