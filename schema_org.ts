@@ -1,3 +1,4 @@
+import { MusicRelease } from "./things/creative_works/music_playlists/music_release.ts";
 import { MusicAlbum } from "./things/creative_works/music_playlists/music_album.ts";
 import { Thing } from "./things/thing.ts";
 import { BreadcrumbList } from "./things/creative_works/item_lists/breadcrumb_list.ts";
@@ -32,6 +33,7 @@ type SchemaOrg =
     | DeepPartial<HyperTocEntry>
     | DeepPartial<Duration>
     | DeepPartial<MusicAlbum>
+    | DeepPartial<MusicRelease>
   );
 
 export default SchemaOrg;
