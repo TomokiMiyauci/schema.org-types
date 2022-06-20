@@ -1,3 +1,4 @@
+import { Episode } from "./things/creative_works/episodes/episode.ts";
 import { Clip } from "./things/creative_works/clips/clip.ts";
 import { VideoObject } from "./things/creative_works/media_objects/video_objects/video_object.ts";
 import { AdministrativeArea } from "./things/places/administrative_areas/administrative_area.ts";
@@ -52,6 +53,7 @@ type SchemaOrg =
     | DeepPartial<AdministrativeArea>
     | DeepPartial<VideoObject>
     | DeepPartial<Clip>
+    | DeepPartial<Episode>
   );
 
 export default SchemaOrg;
