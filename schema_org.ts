@@ -1,3 +1,4 @@
+import { PostalAddress } from "./things/intangibles/structured_values/contact_points/postal_address.ts";
 import { Place } from "./things/places/place.ts";
 import { Episode } from "./things/creative_works/episodes/episode.ts";
 import { Clip } from "./things/creative_works/clips/clip.ts";
@@ -56,6 +57,7 @@ type SchemaOrg =
     | DeepPartial<Clip>
     | DeepPartial<Episode>
     | DeepPartial<Place>
+    | DeepPartial<PostalAddress>
   );
 
 export default SchemaOrg;
