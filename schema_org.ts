@@ -1,3 +1,4 @@
+import { MusicPlaylistType } from "./things/creative_works/music_playlists/music_playlist.ts";
 import { MusicRelease } from "./things/creative_works/music_playlists/music_release.ts";
 import { MusicAlbum } from "./things/creative_works/music_playlists/music_album.ts";
 import { Thing } from "./things/thing.ts";
@@ -34,6 +35,7 @@ type SchemaOrg =
     | DeepPartial<Duration>
     | DeepPartial<MusicAlbum>
     | DeepPartial<MusicRelease>
+    | DeepPartial<MusicPlaylistType>
   );
 
 export default SchemaOrg;
