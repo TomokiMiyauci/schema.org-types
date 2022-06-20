@@ -1,12 +1,12 @@
 import { Clip } from "./things/creative_works/clips/clip.ts";
-import { VideoObjectType } from "./things/creative_works/media_objects/video_objects/video_object.ts";
-import { AdministrativeAreaType } from "./things/places/administrative_areas/administrative_area.ts";
+import { VideoObject } from "./things/creative_works/media_objects/video_objects/video_object.ts";
+import { AdministrativeArea } from "./things/places/administrative_areas/administrative_area.ts";
 import { MusicComposition } from "./things/creative_works/music_composition.ts";
 import { MusicGroup } from "./things/organizations/performing_groups/music_group.ts";
-import { CreativeWorkSeriesType } from "./things/creative_works/creative_work_series/creative_work_series.ts";
-import { CreativeWorkSeasonType } from "./things/creative_works/creative_work_seasons/creative_work_season.ts";
+import { CreativeWorkSeries } from "./things/creative_works/creative_work_series/creative_work_series.ts";
+import { CreativeWorkSeason } from "./things/creative_works/creative_work_seasons/creative_work_season.ts";
 import { MusicRecording } from "./things/creative_works/music_recording.ts";
-import { MusicPlaylistType } from "./things/creative_works/music_playlists/music_playlist.ts";
+import { MusicPlaylist } from "./things/creative_works/music_playlists/music_playlist.ts";
 import { MusicRelease } from "./things/creative_works/music_playlists/music_release.ts";
 import { MusicAlbum } from "./things/creative_works/music_playlists/music_album.ts";
 import { Thing } from "./things/thing.ts";
@@ -43,14 +43,14 @@ type SchemaOrg =
     | DeepPartial<Duration>
     | DeepPartial<MusicAlbum>
     | DeepPartial<MusicRelease>
-    | DeepPartial<MusicPlaylistType>
+    | DeepPartial<MusicPlaylist>
     | DeepPartial<MusicRecording>
-    | DeepPartial<CreativeWorkSeasonType>
-    | DeepPartial<CreativeWorkSeriesType>
+    | DeepPartial<CreativeWorkSeason>
+    | DeepPartial<CreativeWorkSeries>
     | DeepPartial<MusicGroup>
     | DeepPartial<MusicComposition>
-    | DeepPartial<AdministrativeAreaType>
-    | DeepPartial<VideoObjectType>
+    | DeepPartial<AdministrativeArea>
+    | DeepPartial<VideoObject>
     | DeepPartial<Clip>
   );
 
