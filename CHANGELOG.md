@@ -1,0 +1,27 @@
+# 1.0.0-beta.1 (2022-06-20)
+
+
+### Features
+
+* add `Thing` and `BreadcrumbList` types ([1a22a0b](https://github.com/TomokiMiyauci/schema.org-types/commit/1a22a0b36fbe50e13c515d1fc7f1dba4278742cd))
+* **things:** add `AdministrativeArea` types ([70513d1](https://github.com/TomokiMiyauci/schema.org-types/commit/70513d1420bc7be09bcf4bf8ad3c1c198738d4c4))
+* **things:** add `AggregateRating` types ([79095ec](https://github.com/TomokiMiyauci/schema.org-types/commit/79095eca2a38b86f2fc65227df4ac5b94fb35361))
+* **things:** add `Audience` types ([80a1f04](https://github.com/TomokiMiyauci/schema.org-types/commit/80a1f046cba2000ff9f113ee274c5d7a5d110829))
+* **things:** add `AudioObject` types ([ba40850](https://github.com/TomokiMiyauci/schema.org-types/commit/ba40850bcc8110946a6142a9d36e59e05edbf658))
+* **things:** add `Book` types ([22b0c79](https://github.com/TomokiMiyauci/schema.org-types/commit/22b0c793b288849c58aedc38692bf984c5d17d66))
+* **things:** add `Clip` types ([27d65bf](https://github.com/TomokiMiyauci/schema.org-types/commit/27d65bfdf74844257642bf66a74ac0fe0b494544))
+* **things:** add `CreativeWorkSeason` types ([35c638a](https://github.com/TomokiMiyauci/schema.org-types/commit/35c638a6db8c03a3363a9e50dfe700d0d653d10f))
+* **things:** add `CreativeWorkSeriesType` types ([b8cf327](https://github.com/TomokiMiyauci/schema.org-types/commit/b8cf32704aa7d52f4776d5509625548d85bfda2f))
+* **things:** add `DefinedTerm` and `DefinedTermSet` types ([1ac5d7d](https://github.com/TomokiMiyauci/schema.org-types/commit/1ac5d7d5cddb11385486dc314a029a71aff73ac2))
+* **things:** add `Duration` types ([49c4447](https://github.com/TomokiMiyauci/schema.org-types/commit/49c4447931b78f2c19f2cd5f37731fed0f4b0a23))
+* **things:** add `Episode` types ([b65e7a9](https://github.com/TomokiMiyauci/schema.org-types/commit/b65e7a9d08ef33c1291ec91735d3091bbf58cbfa))
+* **things:** add `HyperTocEntry` types ([0ad5aa2](https://github.com/TomokiMiyauci/schema.org-types/commit/0ad5aa235d628becce4212d4348ecea8ce918ec1))
+* **things:** add `MusicAlbum` types ([1df780a](https://github.com/TomokiMiyauci/schema.org-types/commit/1df780a9900cc216503de01ffb58fa51cd3e3a53))
+* **things:** add `MusicComposition` types ([ff006c3](https://github.com/TomokiMiyauci/schema.org-types/commit/ff006c3b3a3496134416e22d37bfb0f830dd74f0))
+* **things:** add `MusicGroup` types ([759f7ba](https://github.com/TomokiMiyauci/schema.org-types/commit/759f7ba7022845567f157d6525b189c3cc3abefa))
+* **things:** add `MusicPlaylist` types ([74aaa63](https://github.com/TomokiMiyauci/schema.org-types/commit/74aaa6336eb18e54c27ff06cbcb3f0260ac29da9))
+* **things:** add `MusicRecording` types ([c56ec10](https://github.com/TomokiMiyauci/schema.org-types/commit/c56ec107b987d5a2098a0f88c3f554f62a68a8d8))
+* **things:** add `MusicRelease` types ([d6fd9e4](https://github.com/TomokiMiyauci/schema.org-types/commit/d6fd9e496a1f9d5dc361c5e20e223510ab3a3957))
+* **things:** add `Rating` types ([acab32c](https://github.com/TomokiMiyauci/schema.org-types/commit/acab32cee8413de76479534487d5ea131eaa0c8a))
+* **things:** add `VideoObject` types ([0cdb504](https://github.com/TomokiMiyauci/schema.org-types/commit/0cdb5043d585ac6291fb8ae52d18ba9d3ece84cf))
+* **things:** add `WebPage` types ([10d9933](https://github.com/TomokiMiyauci/schema.org-types/commit/10d993310b87842090f643c7e9b994a5fc1a6ff8))
