@@ -15,3 +15,5 @@ export interface OrganizationProps extends ThingProps {
 export interface Organization extends OrganizationProps {
   "@type": "Organization";
 }
+
+export type OrganizationType = Organization;
