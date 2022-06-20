@@ -1,6 +1,6 @@
 # schema-org-types
 
-Definition of types of [Schema.org](https://schema.org/).
+Definition of types of [Schema.org](https://schema.org/) with JSON-LD.
 
 ## Example
 
