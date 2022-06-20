@@ -1,3 +1,4 @@
+import { CreativeWorkSeasonType } from "./things/creative_works/creative_work_seasons/creative_work_season.ts";
 import { MusicRecording } from "./things/creative_works/music_recording.ts";
 import { MusicPlaylistType } from "./things/creative_works/music_playlists/music_playlist.ts";
 import { MusicRelease } from "./things/creative_works/music_playlists/music_release.ts";
@@ -38,6 +39,7 @@ type SchemaOrg =
     | DeepPartial<MusicRelease>
     | DeepPartial<MusicPlaylistType>
     | DeepPartial<MusicRecording>
+    | DeepPartial<CreativeWorkSeasonType>
   );
 
 export default SchemaOrg;
