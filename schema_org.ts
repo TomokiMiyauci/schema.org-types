@@ -1,3 +1,4 @@
+import { AdministrativeAreaType } from "./things/places/administrative_areas/administrative_area.ts";
 import { MusicComposition } from "./things/creative_works/music_composition.ts";
 import { MusicGroup } from "./things/organizations/performing_groups/music_group.ts";
 import { CreativeWorkSeriesType } from "./things/creative_works/creative_work_series/creative_work_series.ts";
@@ -46,6 +47,7 @@ type SchemaOrg =
     | DeepPartial<CreativeWorkSeriesType>
     | DeepPartial<MusicGroup>
     | DeepPartial<MusicComposition>
+    | DeepPartial<AdministrativeAreaType>
   );
 
 export default SchemaOrg;
