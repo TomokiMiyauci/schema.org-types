@@ -1,5 +1,5 @@
 import { ItemListProps } from "./item_list.ts";
-import { ThingProps } from "./thing.ts";
+import { ThingProps } from "../../thing.ts";
 
 export interface BreadcrumbListProps extends ItemListProps, ThingProps {
 }

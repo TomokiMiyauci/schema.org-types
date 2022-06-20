@@ -1,7 +1,7 @@
-import { Integer, Text } from "./data_types.ts";
-import { ListItemType } from "./list_item.ts";
-import { ThingProps, ThingType } from "./thing.ts";
-import ItemListOrderType from "./item_list_order_type.ts";
+import { Integer, Text } from "../../../data_types.ts";
+import { ListItemType } from "../../intangibles/list_items/list_item.ts";
+import { ThingProps, ThingType } from "../../thing.ts";
+import { ItemListOrderType } from "../../intangibles/enumerations/item_list_order_type.ts";
 
 export interface ItemListProps extends ThingProps {
   /** For itemListElement values, you can use simple strings (e.g. "Peter", "Paul", "Mary"), existing entities, or use ListItem.

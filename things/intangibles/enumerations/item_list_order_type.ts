@@ -1,7 +1,7 @@
 /** Enumerated for values for itemListOrder for indicating how an ordered ItemList is organized.
  * @see https://schema.org/ItemListOrderType
  */
-type ItemListOrderType =
+export type ItemListOrderType =
   | ItemListOrderAscending
   | ItemListOrderDescending
   | ItemListUnordered;
@@ -20,5 +20,3 @@ type ItemListOrderDescending = "https://schema.org/ItemListOrderDescending";
  * @see https://schema.org/ItemListUnordered
  */
 type ItemListUnordered = "https://schema.org/ItemListUnordered";
-
-export default ItemListOrderType;
