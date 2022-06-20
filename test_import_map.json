@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "https://deno.land/x/schema_org_types@$VERSION/": "./"
+  }
+}

@@ -8,5 +8,8 @@
     "files": {
       "exclude": ["node_modules", "npm"]
     }
+  },
+  "tasks": {
+    "test": "deno test --ignore=node_modules --importmap=test_import_map.json --doc"
   }
 }
