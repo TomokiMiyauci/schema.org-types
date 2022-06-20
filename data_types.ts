@@ -30,3 +30,8 @@ export type Number = number;
  * @see https://schema.org/Integer
  */
 export type Integer = number;
+
+/** A date value in {@link https://en.wikipedia.org/wiki/ISO_8601 ISO 8601 date format}.
+ * @see https://schema.org/Date
+ */
+export type Date = string;
