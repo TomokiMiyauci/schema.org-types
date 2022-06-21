@@ -1,3 +1,4 @@
+import { MedicalSign } from "./things/medical_entities/medical_conditions/medical_sign_or_symptoms/medical_signs/medical_sign.ts";
 import { DDxElement } from "./things/medical_entities/medical_intangibles/d_dx_element.ts";
 import { MedicalConditionStage } from "./things/medical_entities/medical_intangibles/medical_condition_stage.ts";
 import { DoseSchedule } from "./things/medical_entities/medical_intangibles/dose_schedules/dose_schedule.ts";
@@ -148,6 +149,7 @@ type SchemaOrg =
     | DeepPartial<DoseSchedule>
     | DeepPartial<MedicalConditionStage>
     | DeepPartial<DDxElement>
+    | DeepPartial<MedicalSign>
   );
 
 export default SchemaOrg;
