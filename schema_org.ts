@@ -1,3 +1,4 @@
+import { MedicalGuideline } from "./things/medical_entities/medical_guidelines/medical_guideline.ts";
 import { DrugLegalStatus } from "./things/medical_entities/medical_intangibles/drug_legal_status.ts";
 import { MedicalStudy } from "./things/medical_entities/medical_studies/medical_study.ts";
 import { MedicalEntity } from "./things/medical_entities/medical_entity.ts";
@@ -106,6 +107,7 @@ type SchemaOrg =
     | DeepPartial<MedicalEntity>
     | DeepPartial<MedicalStudy>
     | DeepPartial<DrugLegalStatus>
+    | DeepPartial<MedicalGuideline>
   );
 
 export default SchemaOrg;
