@@ -1,3 +1,4 @@
+import { MedicalCode } from "./things/medical_entities/medical_intangibles/medical_code.ts";
 import { Property } from "./things/intangibles/property.ts";
 import { WebContent } from "./things/creative_works/web_contents/web_content.ts";
 import { Enumeration } from "./things/intangibles/enumerations/enumeration.ts";
@@ -98,6 +99,7 @@ type SchemaOrg =
     | DeepPartial<Enumeration>
     | DeepPartial<WebContent>
     | DeepPartial<Property>
+    | DeepPartial<MedicalCode>
   );
 
 export default SchemaOrg;
