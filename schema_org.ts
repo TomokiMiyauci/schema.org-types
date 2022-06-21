@@ -1,3 +1,4 @@
+import { Grant } from "./things/intangibles/grants/grant.ts";
 import { CategoryCode } from "./things/intangibles/defined_terms/category_codes/category_code.ts";
 import { Review } from "./things/creative_works/reviews/review.ts";
 import { Brand } from "./things/intangibles/brand.ts";
@@ -86,6 +87,7 @@ type SchemaOrg =
     | DeepPartial<Brand>
     | DeepPartial<Review>
     | DeepPartial<CategoryCode>
+    | DeepPartial<Grant>
   );
 
 export default SchemaOrg;
