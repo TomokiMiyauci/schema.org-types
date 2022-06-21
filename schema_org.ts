@@ -1,3 +1,4 @@
+import { StructuredValue } from "./things/intangibles/structured_values/structured_value.ts";
 import { QuantitativeValue } from "./things/intangibles/structured_values/quantitative_value.ts";
 import { MedicalGuideline } from "./things/medical_entities/medical_guidelines/medical_guideline.ts";
 import { DrugLegalStatus } from "./things/medical_entities/medical_intangibles/drug_legal_status.ts";
@@ -110,6 +111,7 @@ type SchemaOrg =
     | DeepPartial<DrugLegalStatus>
     | DeepPartial<MedicalGuideline>
     | DeepPartial<QuantitativeValue>
+    | DeepPartial<StructuredValue>
   );
 
 export default SchemaOrg;
