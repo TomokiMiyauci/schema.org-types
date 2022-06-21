@@ -1,3 +1,4 @@
+import { WebContent } from "./things/creative_works/web_contents/web_content.ts";
 import { Enumeration } from "./things/intangibles/enumerations/enumeration.ts";
 import { Class } from "./things/intangibles/class.ts";
 import { Distance } from "./things/intangibles/quantities/distance.ts";
@@ -94,6 +95,7 @@ type SchemaOrg =
     | DeepPartial<Distance>
     | DeepPartial<Class>
     | DeepPartial<Enumeration>
+    | DeepPartial<WebContent>
   );
 
 export default SchemaOrg;
