@@ -1,3 +1,4 @@
+import { Distance } from "./things/intangibles/quantities/distance.ts";
 import { Grant } from "./things/intangibles/grants/grant.ts";
 import { CategoryCode } from "./things/intangibles/defined_terms/category_codes/category_code.ts";
 import { Review } from "./things/creative_works/reviews/review.ts";
@@ -88,6 +89,7 @@ type SchemaOrg =
     | DeepPartial<Review>
     | DeepPartial<CategoryCode>
     | DeepPartial<Grant>
+    | DeepPartial<Distance>
   );
 
 export default SchemaOrg;
