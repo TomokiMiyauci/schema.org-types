@@ -1,3 +1,4 @@
+import { DoseSchedule } from "./things/medical_entities/medical_intangibles/dose_schedules/dose_schedule.ts";
 import { MaximumDoseSchedule } from "./things/medical_entities/medical_intangibles/dose_schedules/maximum_dose_schedule.ts";
 import { MedicalProcedure } from "./things/medical_entities/medical_procedures/medical_procedure.ts";
 import { TherapeuticProcedure } from "./things/medical_entities/medical_procedures/therapeutic_procedures/therapeutic_procedure.ts";
@@ -142,6 +143,7 @@ type SchemaOrg =
     | DeepPartial<TherapeuticProcedure>
     | DeepPartial<MedicalProcedure>
     | DeepPartial<MaximumDoseSchedule>
+    | DeepPartial<DoseSchedule>
   );
 
 export default SchemaOrg;
