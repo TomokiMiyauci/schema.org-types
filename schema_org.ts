@@ -1,3 +1,4 @@
+import { GeoShape } from "./things/intangibles/structured_values/geo_shapes/geo_shape.ts";
 import { OpeningHoursSpecification } from "./things/intangibles/structured_values/opening_hours_specification.ts";
 import { GeoCoordinates } from "./things/intangibles/structured_values/geo_coordinates.ts";
 import { ContactPoint } from "./things/intangibles/structured_values/contact_points/contact_point.ts";
@@ -72,6 +73,7 @@ type SchemaOrg =
     | DeepPartial<ContactPoint>
     | DeepPartial<GeoCoordinates>
     | DeepPartial<OpeningHoursSpecification>
+    | DeepPartial<GeoShape>
   );
 
 export default SchemaOrg;
