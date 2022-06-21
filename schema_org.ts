@@ -1,3 +1,4 @@
+import { Substance } from "./things/medical_entities/substances/substance.ts";
 import { MedicalCondition } from "./things/medical_entities/medical_conditions/medical_condition.ts";
 import { Taxon } from "./things/taxon.ts";
 import { Gene } from "./things/bio_chem_entities/gene.ts";
@@ -128,6 +129,7 @@ type SchemaOrg =
     | DeepPartial<Gene>
     | DeepPartial<Taxon>
     | DeepPartial<MedicalCondition>
+    | DeepPartial<Substance>
   );
 
 export default SchemaOrg;
