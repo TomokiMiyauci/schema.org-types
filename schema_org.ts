@@ -1,3 +1,4 @@
+import { SizeSpecification } from "./things/intangibles/enumerations/qualitative_values/size_specification.ts";
 import { StructuredValue } from "./things/intangibles/structured_values/structured_value.ts";
 import { QuantitativeValue } from "./things/intangibles/structured_values/quantitative_value.ts";
 import { MedicalGuideline } from "./things/medical_entities/medical_guidelines/medical_guideline.ts";
@@ -112,6 +113,7 @@ type SchemaOrg =
     | DeepPartial<MedicalGuideline>
     | DeepPartial<QuantitativeValue>
     | DeepPartial<StructuredValue>
+    | DeepPartial<SizeSpecification>
   );
 
 export default SchemaOrg;
