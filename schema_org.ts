@@ -1,3 +1,4 @@
+import { SuperficialAnatomy } from "./things/medical_entities/superficial_anatomy.ts";
 import { AnatomicalStructure } from "./things/medical_entities/anatomical_structures/anatomical_structure.ts";
 import { MedicalSignOrSymptom } from "./things/medical_entities/medical_conditions/medical_sign_or_symptoms/medical_sign_or_symptom.ts";
 import { MedicalSign } from "./things/medical_entities/medical_conditions/medical_sign_or_symptoms/medical_signs/medical_sign.ts";
@@ -154,6 +155,7 @@ type SchemaOrg =
     | DeepPartial<MedicalSign>
     | DeepPartial<MedicalSignOrSymptom>
     | DeepPartial<AnatomicalStructure>
+    | DeepPartial<SuperficialAnatomy>
   );
 
 export default SchemaOrg;
