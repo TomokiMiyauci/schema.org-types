@@ -178,7 +178,7 @@ export interface PlaceProps extends ThingProps {
 /** Entities that have a somewhat fixed, physical extension.
  * @see https://schema.org/Place
  */
-export interface Place {
+export interface Place extends PlaceProps {
   "@type": "Place";
 }
 
