@@ -1,3 +1,4 @@
+import { Property } from "./things/intangibles/property.ts";
 import { WebContent } from "./things/creative_works/web_contents/web_content.ts";
 import { Enumeration } from "./things/intangibles/enumerations/enumeration.ts";
 import { Class } from "./things/intangibles/class.ts";
@@ -96,6 +97,7 @@ type SchemaOrg =
     | DeepPartial<Class>
     | DeepPartial<Enumeration>
     | DeepPartial<WebContent>
+    | DeepPartial<Property>
   );
 
 export default SchemaOrg;
