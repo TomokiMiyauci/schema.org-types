@@ -1,3 +1,4 @@
+import { Review } from "./things/creative_works/reviews/review.ts";
 import { Brand } from "./things/intangibles/brand.ts";
 import { ProductModel } from "./things/products/product_model.ts";
 import { ProductGroup } from "./things/products/product_group.ts";
@@ -82,6 +83,7 @@ type SchemaOrg =
     | DeepPartial<ProductGroup>
     | DeepPartial<ProductModel>
     | DeepPartial<Brand>
+    | DeepPartial<Review>
   );
 
 export default SchemaOrg;
