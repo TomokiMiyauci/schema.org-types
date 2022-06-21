@@ -1,3 +1,4 @@
+import { Gene } from "./things/bio_chem_entities/gene.ts";
 import { BioChemEntity } from "./things/bio_chem_entities/bio_chem_entity.ts";
 import { CategoryCodeSet } from "./things/creative_works/defined_term_sets/category_code_set.ts";
 import { EnergyConsumptionDetails } from "./things/intangibles/energy_consumption_details.ts";
@@ -122,6 +123,7 @@ type SchemaOrg =
     | DeepPartial<EnergyConsumptionDetails>
     | DeepPartial<CategoryCodeSet>
     | DeepPartial<BioChemEntity>
+    | DeepPartial<Gene>
   );
 
 export default SchemaOrg;
