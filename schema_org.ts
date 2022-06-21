@@ -1,3 +1,4 @@
+import { ProductModel } from "./things/products/product_model.ts";
 import { ProductGroup } from "./things/products/product_group.ts";
 import { Product } from "./things/products/product.ts";
 import { GeoShape } from "./things/intangibles/structured_values/geo_shapes/geo_shape.ts";
@@ -78,6 +79,7 @@ type SchemaOrg =
     | DeepPartial<GeoShape>
     | DeepPartial<Product>
     | DeepPartial<ProductGroup>
+    | DeepPartial<ProductModel>
   );
 
 export default SchemaOrg;
