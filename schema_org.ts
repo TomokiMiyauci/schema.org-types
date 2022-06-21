@@ -1,3 +1,4 @@
+import { MedicalTherapy } from "./things/medical_entities/medical_procedures/therapeutic_procedures/medical_therapies/medical_therapy.ts";
 import { MedicalContraindication } from "./things/medical_entities/medical_contraindication.ts";
 import { MedicalTest } from "./things/medical_entities/medical_tests/medical_test.ts";
 import { Substance } from "./things/medical_entities/substances/substance.ts";
@@ -134,6 +135,7 @@ type SchemaOrg =
     | DeepPartial<Substance>
     | DeepPartial<MedicalTest>
     | DeepPartial<MedicalContraindication>
+    | DeepPartial<MedicalTherapy>
   );
 
 export default SchemaOrg;
