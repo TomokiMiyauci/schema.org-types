@@ -1,3 +1,4 @@
+import { MedicalEntity } from "./things/medical_entities/medical_entity.ts";
 import { MedicalCode } from "./things/medical_entities/medical_intangibles/medical_code.ts";
 import { Property } from "./things/intangibles/property.ts";
 import { WebContent } from "./things/creative_works/web_contents/web_content.ts";
@@ -100,6 +101,7 @@ type SchemaOrg =
     | DeepPartial<WebContent>
     | DeepPartial<Property>
     | DeepPartial<MedicalCode>
+    | DeepPartial<MedicalEntity>
   );
 
 export default SchemaOrg;
