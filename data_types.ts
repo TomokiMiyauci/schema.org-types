@@ -41,6 +41,11 @@ export type Date = string;
  */
 export type DateTime = string;
 
+/** A point in time recurring on multiple days in the form hh:mm:ss[Z|(+|-)hh:mm] (see {@link https://www.w3.org/TR/xmlschema-2/#time XML schema for details}).
+ * @see https://schema.org/Time
+ */
+export type Time = string;
+
 /** Boolean: `true` or `false`.
  * @see https://schema.org/Boolean
  */
