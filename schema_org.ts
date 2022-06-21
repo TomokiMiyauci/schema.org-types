@@ -1,3 +1,4 @@
+import { Brand } from "./things/intangibles/brand.ts";
 import { ProductModel } from "./things/products/product_model.ts";
 import { ProductGroup } from "./things/products/product_group.ts";
 import { Product } from "./things/products/product.ts";
@@ -80,6 +81,7 @@ type SchemaOrg =
     | DeepPartial<Product>
     | DeepPartial<ProductGroup>
     | DeepPartial<ProductModel>
+    | DeepPartial<Brand>
   );
 
 export default SchemaOrg;
