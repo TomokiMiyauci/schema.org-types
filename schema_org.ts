@@ -1,3 +1,4 @@
+import { Taxon } from "./things/taxon.ts";
 import { Gene } from "./things/bio_chem_entities/gene.ts";
 import { BioChemEntity } from "./things/bio_chem_entities/bio_chem_entity.ts";
 import { CategoryCodeSet } from "./things/creative_works/defined_term_sets/category_code_set.ts";
@@ -124,6 +125,7 @@ type SchemaOrg =
     | DeepPartial<CategoryCodeSet>
     | DeepPartial<BioChemEntity>
     | DeepPartial<Gene>
+    | DeepPartial<Taxon>
   );
 
 export default SchemaOrg;
