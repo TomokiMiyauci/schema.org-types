@@ -1,3 +1,4 @@
+import { Product } from "./things/products/product.ts";
 import { GeoShape } from "./things/intangibles/structured_values/geo_shapes/geo_shape.ts";
 import { OpeningHoursSpecification } from "./things/intangibles/structured_values/opening_hours_specification.ts";
 import { GeoCoordinates } from "./things/intangibles/structured_values/geo_coordinates.ts";
@@ -74,6 +75,7 @@ type SchemaOrg =
     | DeepPartial<GeoCoordinates>
     | DeepPartial<OpeningHoursSpecification>
     | DeepPartial<GeoShape>
+    | DeepPartial<Product>
   );
 
 export default SchemaOrg;
