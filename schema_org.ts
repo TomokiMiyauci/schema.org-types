@@ -1,3 +1,4 @@
+import { CategoryCode } from "./things/intangibles/defined_terms/category_codes/category_code.ts";
 import { Review } from "./things/creative_works/reviews/review.ts";
 import { Brand } from "./things/intangibles/brand.ts";
 import { ProductModel } from "./things/products/product_model.ts";
@@ -84,6 +85,7 @@ type SchemaOrg =
     | DeepPartial<ProductModel>
     | DeepPartial<Brand>
     | DeepPartial<Review>
+    | DeepPartial<CategoryCode>
   );
 
 export default SchemaOrg;
