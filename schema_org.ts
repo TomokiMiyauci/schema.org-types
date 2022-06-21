@@ -1,3 +1,4 @@
+import { ContactPoint } from "./things/intangibles/structured_values/contact_points/contact_point.ts";
 import { Language } from "./things/intangibles/language.ts";
 import { Country } from "./things/places/administrative_areas/country.ts";
 import { GeospatialGeometry } from "./things/intangibles/geospatial_geometry.ts";
@@ -66,6 +67,7 @@ type SchemaOrg =
     | DeepPartial<GeospatialGeometry>
     | DeepPartial<Country>
     | DeepPartial<Language>
+    | DeepPartial<ContactPoint>
   );
 
 export default SchemaOrg;
