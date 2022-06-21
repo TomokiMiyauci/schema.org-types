@@ -1,3 +1,4 @@
+import { Enumeration } from "./things/intangibles/enumerations/enumeration.ts";
 import { Class } from "./things/intangibles/class.ts";
 import { Distance } from "./things/intangibles/quantities/distance.ts";
 import { Grant } from "./things/intangibles/grants/grant.ts";
@@ -92,6 +93,7 @@ type SchemaOrg =
     | DeepPartial<Grant>
     | DeepPartial<Distance>
     | DeepPartial<Class>
+    | DeepPartial<Enumeration>
   );
 
 export default SchemaOrg;
