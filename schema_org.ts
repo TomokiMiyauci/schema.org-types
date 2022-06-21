@@ -1,3 +1,5 @@
+import { CategoryCodeSet } from "./things/creative_works/defined_term_sets/category_code_set.ts";
+import { EnergyConsumptionDetails } from "./things/intangibles/energy_consumption_details.ts";
 import { QualitativeValue } from "./things/intangibles/enumerations/qualitative_values/qualitative_value.ts";
 import { SizeSpecification } from "./things/intangibles/enumerations/qualitative_values/size_specification.ts";
 import { StructuredValue } from "./things/intangibles/structured_values/structured_value.ts";
@@ -116,6 +118,8 @@ type SchemaOrg =
     | DeepPartial<StructuredValue>
     | DeepPartial<SizeSpecification>
     | DeepPartial<QualitativeValue>
+    | DeepPartial<EnergyConsumptionDetails>
+    | DeepPartial<CategoryCodeSet>
   );
 
 export default SchemaOrg;
