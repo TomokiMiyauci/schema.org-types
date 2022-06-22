@@ -1,3 +1,4 @@
+import { AggregateOffer } from "./things/intangibles/offers/aggregate_offer.ts";
 import { FinancialProduct } from "./things/intangibles/services/financial_products/financial_product.ts";
 import { TypeAndQuantityNode } from "./things/intangibles/structured_values/type_and_quantity_node.ts";
 import { WarrantyPromise } from "./things/intangibles/structured_values/warranty_promisel.ts";
@@ -192,6 +193,7 @@ type SchemaOrg =
     | DeepPartial<WarrantyPromise>
     | DeepPartial<TypeAndQuantityNode>
     | DeepPartial<FinancialProduct>
+    | DeepPartial<AggregateOffer>
   );
 
 export default SchemaOrg;
