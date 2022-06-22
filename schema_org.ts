@@ -1,3 +1,4 @@
+import { ShippingDeliveryTime } from "./things/intangibles/structured_values/shipping_delivery_time.ts";
 import { OfferShippingDetails } from "./things/intangibles/structured_values/offer_shipping_details.ts";
 import { Offer } from "./things/intangibles/offers/offer.ts";
 import { RepaymentSpecification } from "./things/intangibles/structured_values/repayment_specification.ts";
@@ -214,6 +215,7 @@ type SchemaOrg =
     | DeepPartial<Offer>
     | DeepPartial<RepaymentSpecification>
     | DeepPartial<OfferShippingDetails>
+    | DeepPartial<ShippingDeliveryTime>
   );
 
 export default SchemaOrg;
