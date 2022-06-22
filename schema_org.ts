@@ -1,3 +1,4 @@
+import { Energy } from "./things/intangibles/quantities/energy.ts";
 import { MenuSection } from "./things/creative_works/menu_section.ts";
 import { MenuItem } from "./things/intangibles/menu_item.ts";
 import { AggregateOffer } from "./things/intangibles/offers/aggregate_offer.ts";
@@ -198,6 +199,7 @@ type SchemaOrg =
     | DeepPartial<AggregateOffer>
     | DeepPartial<MenuItem>
     | DeepPartial<MenuSection>
+    | DeepPartial<Energy>
   );
 
 export default SchemaOrg;
