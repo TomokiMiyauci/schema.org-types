@@ -1,3 +1,4 @@
+import { MerchantReturnPolicy } from "./things/intangibles/merchant_return_policy.ts";
 import { PostalCodeRangeSpecification } from "./things/intangibles/structured_values/postal_code_range_specification.ts";
 import { DefinedRegion } from "./things/intangibles/structured_values/defined_region.ts";
 import { ShippingDeliveryTime } from "./things/intangibles/structured_values/shipping_delivery_time.ts";
@@ -220,6 +221,7 @@ type SchemaOrg =
     | DeepPartial<ShippingDeliveryTime>
     | DeepPartial<DefinedRegion>
     | DeepPartial<PostalCodeRangeSpecification>
+    | DeepPartial<MerchantReturnPolicy>
   );
 
 export default SchemaOrg;
