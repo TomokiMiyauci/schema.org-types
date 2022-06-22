@@ -1,3 +1,4 @@
+import { PaymentCard } from "./things/intangibles/services/financial_products/payment_cards/payment_card.ts";
 import { MerchantReturnPolicySeasonalOverride } from "./things/intangibles/merchant_return_policy_seasonal_override.ts";
 import { MerchantReturnPolicy } from "./things/intangibles/merchant_return_policy.ts";
 import { PostalCodeRangeSpecification } from "./things/intangibles/structured_values/postal_code_range_specification.ts";
@@ -224,6 +225,7 @@ type SchemaOrg =
     | DeepPartial<PostalCodeRangeSpecification>
     | DeepPartial<MerchantReturnPolicy>
     | DeepPartial<MerchantReturnPolicySeasonalOverride>
+    | DeepPartial<PaymentCard>
   );
 
 export default SchemaOrg;
