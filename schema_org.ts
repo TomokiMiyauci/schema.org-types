@@ -1,3 +1,4 @@
+import { Offer } from "./things/intangibles/offers/offer.ts";
 import { RepaymentSpecification } from "./things/intangibles/structured_values/repayment_specification.ts";
 import { LoanOrCredit } from "./things/intangibles/services/financial_products/loan_or_credits/loan_or_credit.ts";
 import { MonetaryAmount } from "./things/intangibles/structured_values/monetary_amount.ts";
@@ -209,6 +210,7 @@ type SchemaOrg =
     | DeepPartial<NutritionInformation>
     | DeepPartial<MonetaryAmount>
     | DeepPartial<LoanOrCredit>
+    | DeepPartial<Offer>
     | DeepPartial<RepaymentSpecification>
   );
 
