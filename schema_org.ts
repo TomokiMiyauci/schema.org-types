@@ -1,3 +1,4 @@
+import { Trip } from "./things/intangibles/trips/trip.ts";
 import { Demand } from "./things/intangibles/demand.ts";
 import { HealthPlanFormulary } from "./things/intangibles/health_plan_formulary.ts";
 import { HealthPlanNetwork } from "./things/intangibles/health_plan_network.ts";
@@ -182,6 +183,7 @@ type SchemaOrg =
     | DeepPartial<HealthPlanNetwork>
     | DeepPartial<HealthPlanFormulary>
     | DeepPartial<Demand>
+    | DeepPartial<Trip>
   );
 
 export default SchemaOrg;
