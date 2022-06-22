@@ -108,124 +108,136 @@ import { Audience } from "./things/intangibles/audiences/audience.ts";
 import { AudioObject } from "./things/creative_works/media_objects/audio_objects/audio_object.ts";
 import { HyperTocEntry } from "./things/creative_works/hyper_toc_entry.ts";
 import { Duration } from "./things/intangibles/quantities/duration.ts";
+import { ArrayableWithoutSyntaxToken, DeepPartial } from "./utils.ts";
 
-type DeepPartial<T> = {
-  readonly [P in keyof T]?: keyof T[P] extends never ? T[P] : DeepPartial<T[P]>;
+type SyntaxToken = {
+  /** Used to define the short-hand names that are used throughout a JSON-LD document.
+   * @see https://www.w3.org/TR/json-ld11/#the-context
+   */
+  // deno-lint-ignore ban-types
+  "@context": "https://schema.org" | ({} & string);
+
+  /** Used to set the type of a node or the datatype of a typed value.
+   * @see https://www.w3.org/TR/json-ld11/#specifying-the-type
+   */
+  "@type": string;
 };
 
 type SchemaOrg =
-  & { "@context": "https://schema.org" }
+  & SyntaxToken
   & (
-    | DeepPartial<Thing>
-    | DeepPartial<BreadcrumbList>
-    | DeepPartial<WebPage>
-    | DeepPartial<Book>
-    | DeepPartial<Rating>
-    | DeepPartial<AggregateRating>
-    | DeepPartial<DefinedTermSet>
-    | DeepPartial<DefinedTerm>
-    | DeepPartial<Audience>
-    | DeepPartial<AudioObject>
-    | DeepPartial<HyperTocEntry>
-    | DeepPartial<Duration>
-    | DeepPartial<MusicAlbum>
-    | DeepPartial<MusicRelease>
-    | DeepPartial<MusicPlaylist>
-    | DeepPartial<MusicRecording>
-    | DeepPartial<CreativeWorkSeason>
-    | DeepPartial<CreativeWorkSeries>
-    | DeepPartial<MusicGroup>
-    | DeepPartial<MusicComposition>
-    | DeepPartial<AdministrativeArea>
-    | DeepPartial<VideoObject>
-    | DeepPartial<Clip>
-    | DeepPartial<Episode>
-    | DeepPartial<Place>
-    | DeepPartial<PostalAddress>
-    | DeepPartial<LocationFeatureSpecification>
-    | DeepPartial<GeospatialGeometry>
-    | DeepPartial<Country>
-    | DeepPartial<Language>
-    | DeepPartial<ContactPoint>
-    | DeepPartial<GeoCoordinates>
-    | DeepPartial<OpeningHoursSpecification>
-    | DeepPartial<GeoShape>
-    | DeepPartial<Product>
-    | DeepPartial<ProductGroup>
-    | DeepPartial<ProductModel>
-    | DeepPartial<Brand>
-    | DeepPartial<Review>
-    | DeepPartial<CategoryCode>
-    | DeepPartial<Grant>
-    | DeepPartial<Distance>
-    | DeepPartial<Class>
-    | DeepPartial<Enumeration>
-    | DeepPartial<WebContent>
-    | DeepPartial<Property>
-    | DeepPartial<MedicalCode>
-    | DeepPartial<MedicalEntity>
-    | DeepPartial<MedicalStudy>
-    | DeepPartial<DrugLegalStatus>
-    | DeepPartial<MedicalGuideline>
-    | DeepPartial<QuantitativeValue>
-    | DeepPartial<StructuredValue>
-    | DeepPartial<SizeSpecification>
-    | DeepPartial<QualitativeValue>
-    | DeepPartial<EnergyConsumptionDetails>
-    | DeepPartial<CategoryCodeSet>
-    | DeepPartial<BioChemEntity>
-    | DeepPartial<Gene>
-    | DeepPartial<Taxon>
-    | DeepPartial<MedicalCondition>
-    | DeepPartial<Substance>
-    | DeepPartial<MedicalTest>
-    | DeepPartial<MedicalContraindication>
-    | DeepPartial<MedicalTherapy>
-    | DeepPartial<TherapeuticProcedure>
-    | DeepPartial<MedicalProcedure>
-    | DeepPartial<MaximumDoseSchedule>
-    | DeepPartial<DoseSchedule>
-    | DeepPartial<MedicalConditionStage>
-    | DeepPartial<DDxElement>
-    | DeepPartial<MedicalSign>
-    | DeepPartial<MedicalSignOrSymptom>
-    | DeepPartial<AnatomicalStructure>
-    | DeepPartial<SuperficialAnatomy>
-    | DeepPartial<MedicalRiskFactor>
-    | DeepPartial<MedicalDevice>
-    | DeepPartial<AnatomicalSystem>
-    | DeepPartial<Drug>
-    | DeepPartial<DrugStrength>
-    | DeepPartial<DrugClass>
-    | DeepPartial<OfferCatalog>
-    | DeepPartial<Service>
-    | DeepPartial<ServiceChannel>
-    | DeepPartial<HealthInsurancePlan>
-    | DeepPartial<HealthPlanNetwork>
-    | DeepPartial<HealthPlanFormulary>
-    | DeepPartial<Demand>
-    | DeepPartial<Trip>
-    | DeepPartial<PriceSpecification>
-    | DeepPartial<WarrantyPromise>
-    | DeepPartial<TypeAndQuantityNode>
-    | DeepPartial<FinancialProduct>
-    | DeepPartial<AggregateOffer>
-    | DeepPartial<MenuItem>
-    | DeepPartial<MenuSection>
-    | DeepPartial<Energy>
-    | DeepPartial<Mass>
-    | DeepPartial<NutritionInformation>
-    | DeepPartial<MonetaryAmount>
-    | DeepPartial<LoanOrCredit>
-    | DeepPartial<Offer>
-    | DeepPartial<RepaymentSpecification>
-    | DeepPartial<OfferShippingDetails>
-    | DeepPartial<ShippingDeliveryTime>
-    | DeepPartial<DefinedRegion>
-    | DeepPartial<PostalCodeRangeSpecification>
-    | DeepPartial<MerchantReturnPolicy>
-    | DeepPartial<MerchantReturnPolicySeasonalOverride>
-    | DeepPartial<PaymentCard>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Thing>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<BreadcrumbList>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<WebPage>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Book>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Rating>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<AggregateRating>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<DefinedTermSet>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<DefinedTerm>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Audience>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<AudioObject>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<HyperTocEntry>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Duration>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MusicAlbum>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MusicRelease>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MusicPlaylist>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MusicRecording>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<CreativeWorkSeason>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<CreativeWorkSeries>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MusicGroup>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MusicComposition>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<AdministrativeArea>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<VideoObject>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Clip>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Episode>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Place>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<PostalAddress>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<LocationFeatureSpecification>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<GeospatialGeometry>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Country>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Language>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<ContactPoint>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<GeoCoordinates>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<OpeningHoursSpecification>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<GeoShape>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Product>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<ProductGroup>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<ProductModel>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Brand>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Review>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<CategoryCode>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Grant>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Distance>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Class>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Enumeration>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<WebContent>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Property>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MedicalCode>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MedicalEntity>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MedicalStudy>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<DrugLegalStatus>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MedicalGuideline>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<QuantitativeValue>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<StructuredValue>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<SizeSpecification>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<QualitativeValue>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<EnergyConsumptionDetails>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<CategoryCodeSet>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<BioChemEntity>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Gene>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Taxon>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MedicalCondition>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Substance>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MedicalTest>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MedicalContraindication>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MedicalTherapy>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<TherapeuticProcedure>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MedicalProcedure>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MaximumDoseSchedule>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<DoseSchedule>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MedicalConditionStage>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<DDxElement>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MedicalSign>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MedicalSignOrSymptom>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<AnatomicalStructure>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<SuperficialAnatomy>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MedicalRiskFactor>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MedicalDevice>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<AnatomicalSystem>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Drug>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<DrugStrength>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<DrugClass>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<OfferCatalog>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Service>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<ServiceChannel>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<HealthInsurancePlan>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<HealthPlanNetwork>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<HealthPlanFormulary>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Demand>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Trip>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<PriceSpecification>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<WarrantyPromise>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<TypeAndQuantityNode>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<FinancialProduct>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<AggregateOffer>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MenuItem>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MenuSection>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Energy>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Mass>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<NutritionInformation>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MonetaryAmount>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<LoanOrCredit>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Offer>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<RepaymentSpecification>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<OfferShippingDetails>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<ShippingDeliveryTime>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<DefinedRegion>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<PostalCodeRangeSpecification>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<MerchantReturnPolicy>>
+    | DeepPartial<
+      ArrayableWithoutSyntaxToken<MerchantReturnPolicySeasonalOverride>
+    >
+    | DeepPartial<ArrayableWithoutSyntaxToken<PaymentCard>>
   );
 
 export default SchemaOrg;
