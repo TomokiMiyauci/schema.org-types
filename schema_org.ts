@@ -1,3 +1,4 @@
+import { DrugStrength } from "./things/medical_entities/medical_intangibles/drug_strength.ts";
 import { Drug } from "./things/medical_entities/substances/drug.ts";
 import { AnatomicalSystem } from "./things/medical_entities/anatomical_system.ts";
 import { MedicalDevice } from "./things/medical_entities/medical_device.ts";
@@ -164,6 +165,7 @@ type SchemaOrg =
     | DeepPartial<MedicalDevice>
     | DeepPartial<AnatomicalSystem>
     | DeepPartial<Drug>
+    | DeepPartial<DrugStrength>
   );
 
 export default SchemaOrg;
