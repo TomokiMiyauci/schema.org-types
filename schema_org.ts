@@ -1,3 +1,4 @@
+import { Mass } from "./things/intangibles/quantities/mass.ts";
 import { Energy } from "./things/intangibles/quantities/energy.ts";
 import { MenuSection } from "./things/creative_works/menu_section.ts";
 import { MenuItem } from "./things/intangibles/menu_item.ts";
@@ -200,6 +201,7 @@ type SchemaOrg =
     | DeepPartial<MenuItem>
     | DeepPartial<MenuSection>
     | DeepPartial<Energy>
+    | DeepPartial<Mass>
   );
 
 export default SchemaOrg;
