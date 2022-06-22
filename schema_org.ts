@@ -1,3 +1,4 @@
+import { MonetaryAmount } from "./things/intangibles/structured_values/monetary_amount.ts";
 import { NutritionInformation } from "./things/intangibles/structured_values/nutrition_information.ts";
 import { Mass } from "./things/intangibles/quantities/mass.ts";
 import { Energy } from "./things/intangibles/quantities/energy.ts";
@@ -204,6 +205,7 @@ type SchemaOrg =
     | DeepPartial<Energy>
     | DeepPartial<Mass>
     | DeepPartial<NutritionInformation>
+    | DeepPartial<MonetaryAmount>
   );
 
 export default SchemaOrg;
