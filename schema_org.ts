@@ -1,3 +1,4 @@
+import { PostalCodeRangeSpecification } from "./things/intangibles/structured_values/postal_code_range_specification.ts";
 import { DefinedRegion } from "./things/intangibles/structured_values/defined_region.ts";
 import { ShippingDeliveryTime } from "./things/intangibles/structured_values/shipping_delivery_time.ts";
 import { OfferShippingDetails } from "./things/intangibles/structured_values/offer_shipping_details.ts";
@@ -218,6 +219,7 @@ type SchemaOrg =
     | DeepPartial<OfferShippingDetails>
     | DeepPartial<ShippingDeliveryTime>
     | DeepPartial<DefinedRegion>
+    | DeepPartial<PostalCodeRangeSpecification>
   );
 
 export default SchemaOrg;
