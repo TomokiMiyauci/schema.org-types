@@ -1,3 +1,4 @@
+import { Service } from "./things/intangibles/services/service.ts";
 import { OfferCatalog } from "./things/intangibles/list_items/offer_catalog.ts";
 import { DrugClass } from "./things/medical_entities/drug_class.ts";
 import { DrugStrength } from "./things/medical_entities/medical_intangibles/drug_strength.ts";
@@ -170,6 +171,7 @@ type SchemaOrg =
     | DeepPartial<DrugStrength>
     | DeepPartial<DrugClass>
     | DeepPartial<OfferCatalog>
+    | DeepPartial<Service>
   );
 
 export default SchemaOrg;
