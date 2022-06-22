@@ -1,4 +1,4 @@
-import { SizeSpecificationType } from "../intangibles/enumerations/qualitative_values/size_specification.ts";
+import { SizeSpecification } from "../intangibles/enumerations/qualitative_values/size_specification.ts";
 import { ReviewType } from "../creative_works/reviews/review.ts";
 import { OfferType } from "../intangibles/offers/offer.ts";
 import { Demand } from "../intangibles/demand.ts";
@@ -273,7 +273,7 @@ export interface ProductProps extends ThingProps {
    * @see https://schema.org/size
    * @deprecated
    */
-  size: DefinedTermType | QuantitativeValue | SizeSpecificationType | Text;
+  size: DefinedTermType | QuantitativeValue | SizeSpecification | Text;
 
   /** The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers.
    * @see https://schema.org/sku
