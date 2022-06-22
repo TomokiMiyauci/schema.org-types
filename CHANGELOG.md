@@ -1,3 +1,10 @@
+# [1.0.0-beta.3](https://github.com/TomokiMiyauci/schema.org-types/compare/1.0.0-beta.2...1.0.0-beta.3) (2022-06-22)
+
+
+### Features
+
+* accept array format at field value ([ad68196](https://github.com/TomokiMiyauci/schema.org-types/commit/ad6819683cc7b17e44f55243b7f2e552106d77ec))
+
 # [1.0.0-beta.2](https://github.com/TomokiMiyauci/schema.org-types/compare/1.0.0-beta.1...1.0.0-beta.2) (2022-06-22)
 
 
