@@ -1,3 +1,4 @@
+import { NutritionInformation } from "./things/intangibles/structured_values/nutrition_information.ts";
 import { Mass } from "./things/intangibles/quantities/mass.ts";
 import { Energy } from "./things/intangibles/quantities/energy.ts";
 import { MenuSection } from "./things/creative_works/menu_section.ts";
@@ -202,6 +203,7 @@ type SchemaOrg =
     | DeepPartial<MenuSection>
     | DeepPartial<Energy>
     | DeepPartial<Mass>
+    | DeepPartial<NutritionInformation>
   );
 
 export default SchemaOrg;
