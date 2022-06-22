@@ -1,3 +1,4 @@
+import { PriceSpecification } from "./things/intangibles/structured_values/price_specifications/price_specification.ts";
 import { Trip } from "./things/intangibles/trips/trip.ts";
 import { Demand } from "./things/intangibles/demand.ts";
 import { HealthPlanFormulary } from "./things/intangibles/health_plan_formulary.ts";
@@ -184,6 +185,7 @@ type SchemaOrg =
     | DeepPartial<HealthPlanFormulary>
     | DeepPartial<Demand>
     | DeepPartial<Trip>
+    | DeepPartial<PriceSpecification>
   );
 
 export default SchemaOrg;
