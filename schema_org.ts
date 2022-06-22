@@ -1,3 +1,4 @@
+import { FinancialProduct } from "./things/intangibles/services/financial_products/financial_product.ts";
 import { TypeAndQuantityNode } from "./things/intangibles/structured_values/type_and_quantity_node.ts";
 import { WarrantyPromise } from "./things/intangibles/structured_values/warranty_promisel.ts";
 import { PriceSpecification } from "./things/intangibles/structured_values/price_specifications/price_specification.ts";
@@ -190,6 +191,7 @@ type SchemaOrg =
     | DeepPartial<PriceSpecification>
     | DeepPartial<WarrantyPromise>
     | DeepPartial<TypeAndQuantityNode>
+    | DeepPartial<FinancialProduct>
   );
 
 export default SchemaOrg;
