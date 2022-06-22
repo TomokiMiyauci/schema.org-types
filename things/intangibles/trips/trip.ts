@@ -49,7 +49,7 @@ export interface TripProps extends ThingProps {
 }
 
 /** A trip or journey. An itinerary of visits to one or more places.
- * @see　https://schema.org/Trip
+ * @see https://schema.org/Trip
  */
 export interface Trip extends TripProps {
   "@type": "Trip";
