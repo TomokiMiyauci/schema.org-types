@@ -1,3 +1,4 @@
+import { HealthPlanFormulary } from "./things/intangibles/health_plan_formulary.ts";
 import { HealthPlanNetwork } from "./things/intangibles/health_plan_network.ts";
 import { HealthInsurancePlan } from "./things/intangibles/health_insurance_plan.ts";
 import { ServiceChannel } from "./things/intangibles/service_channel.ts";
@@ -178,6 +179,7 @@ type SchemaOrg =
     | DeepPartial<ServiceChannel>
     | DeepPartial<HealthInsurancePlan>
     | DeepPartial<HealthPlanNetwork>
+    | DeepPartial<HealthPlanFormulary>
   );
 
 export default SchemaOrg;
