@@ -1,3 +1,4 @@
+import { PublicationEvent } from "./things/events/publication_events/publication_event.ts";
 import { AlignmentObject } from "./things/intangibles/alignment_object.ts";
 import { InteractionCounter } from "./things/intangibles/structured_values/interaction_counter.ts";
 import { VirtualLocation } from "./things/intangibles/virtual_location.ts";
@@ -248,6 +249,7 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<VirtualLocation>>
     | DeepPartial<ArrayableWithoutSyntaxToken<InteractionCounter>>
     | DeepPartial<ArrayableWithoutSyntaxToken<AlignmentObject>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<PublicationEvent>>
   );
 
 export default SchemaOrg;
