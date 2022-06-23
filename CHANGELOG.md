@@ -1,3 +1,27 @@
+# [1.0.0-beta.4](https://github.com/TomokiMiyauci/schema.org-types/compare/1.0.0-beta.3...1.0.0-beta.4) (2022-06-23)
+
+
+### Features
+
+* **things:** add `AlignmentObject` types ([e5335e4](https://github.com/TomokiMiyauci/schema.org-types/commit/e5335e4ed1679a20617a8e0032bad0e09bf5fa62))
+* **things:** add `BroadcastChannel` types ([2c7233b](https://github.com/TomokiMiyauci/schema.org-types/commit/2c7233bb3fe802572827c42bfbff0509bb24b9a2))
+* **things:** add `BroadcastFrequencySpecification` types ([b41229b](https://github.com/TomokiMiyauci/schema.org-types/commit/b41229bb30d1a7a7a5bff4eebccbe3cc72bfd692))
+* **things:** add `BroadcastService` types ([26f0cab](https://github.com/TomokiMiyauci/schema.org-types/commit/26f0cab8978bd0402f3afdd347edc2580b2e1fe6))
+* **things:** add `CableOrSatelliteService` types ([223b81d](https://github.com/TomokiMiyauci/schema.org-types/commit/223b81d9a0dcdde9adc93bb70595632e38878942))
+* **things:** add `Claim` types ([1fd80df](https://github.com/TomokiMiyauci/schema.org-types/commit/1fd80df6541f486ee6adcb99ec11864a689cb946))
+* **things:** add `Comment` types ([9e01bab](https://github.com/TomokiMiyauci/schema.org-types/commit/9e01babefca82a7c48ae172699b78837dea0de01))
+* **things:** add `CorrectionComment` types ([d95c467](https://github.com/TomokiMiyauci/schema.org-types/commit/d95c467b9e786ff5406f9c875e7c71ffee231063))
+* **things:** add `CreativeWork` types ([460ba75](https://github.com/TomokiMiyauci/schema.org-types/commit/460ba75280c57685517a989016790355b1c49102))
+* **things:** add `DataCatalog` types ([15daa51](https://github.com/TomokiMiyauci/schema.org-types/commit/15daa51717e46b695323286dbfeae919fc22f0a7))
+* **things:** add `DataDownload` types ([92664bb](https://github.com/TomokiMiyauci/schema.org-types/commit/92664bb0fb70708b8ca29d2c67fa6d1ea6c4cdba))
+* **things:** add `DataFeed` types ([87df517](https://github.com/TomokiMiyauci/schema.org-types/commit/87df517842aa1e36e310c07c3ee9aa892124bd0e))
+* **things:** add `DataFeedItem` types ([90aa101](https://github.com/TomokiMiyauci/schema.org-types/commit/90aa1014f38fc00842645281fff12ee7fe6c7d23))
+* **things:** add `Dataset` types ([7ab1179](https://github.com/TomokiMiyauci/schema.org-types/commit/7ab1179b3bf03899dc76d8702551e5f736e3ab09))
+* **things:** add `InteractionCounter` types ([81720cc](https://github.com/TomokiMiyauci/schema.org-types/commit/81720ccdf72493edc02db644f7da9e7ea77039f9))
+* **things:** add `PublicationEvent` types ([d1ede40](https://github.com/TomokiMiyauci/schema.org-types/commit/d1ede4028fde635a3a860229393e03a8e22ebfbb))
+* **things:** add `SoftwareApplication` types ([1c97675](https://github.com/TomokiMiyauci/schema.org-types/commit/1c9767566875ed2cf603dcd4c2948fb7c5bb2639))
+* **things:** add `VirtualLocation` types ([4c17395](https://github.com/TomokiMiyauci/schema.org-types/commit/4c17395339702313c2d2e264a0721e4cc9eaebfd))
+
 # [1.0.0-beta.3](https://github.com/TomokiMiyauci/schema.org-types/compare/1.0.0-beta.2...1.0.0-beta.3) (2022-06-22)
 
 
