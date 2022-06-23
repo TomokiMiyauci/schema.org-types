@@ -1,3 +1,4 @@
+import { CreativeWork } from "./things/creative_works/creative_work.ts";
 import { CorrectionComment } from "./things/creative_works/comments/correction_comment.ts";
 import { PaymentCard } from "./things/intangibles/services/financial_products/payment_cards/payment_card.ts";
 import { MerchantReturnPolicySeasonalOverride } from "./things/intangibles/merchant_return_policy_seasonal_override.ts";
@@ -240,6 +241,7 @@ type SchemaOrg =
     >
     | DeepPartial<ArrayableWithoutSyntaxToken<PaymentCard>>
     | DeepPartial<ArrayableWithoutSyntaxToken<CorrectionComment>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<CreativeWork>>
   );
 
 export default SchemaOrg;
