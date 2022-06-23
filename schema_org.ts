@@ -1,3 +1,4 @@
+import { DataCatalog } from "./things/creative_works/data_catalog.ts";
 import { SoftwareApplication } from "./things/creative_works/software_applications/software_application.ts";
 import { BroadcastChannel } from "./things/intangibles/broadcast_channels/broadcast_channel.ts";
 import { CableOrSatelliteService } from "./things/intangibles/services/cable_or_satellite_service.ts";
@@ -264,6 +265,7 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<CableOrSatelliteService>>
     | DeepPartial<ArrayableWithoutSyntaxToken<BroadcastChannel>>
     | DeepPartial<ArrayableWithoutSyntaxToken<SoftwareApplication>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<DataCatalog>>
   );
 
 export default SchemaOrg;
