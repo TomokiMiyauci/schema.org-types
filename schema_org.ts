@@ -1,3 +1,4 @@
+import { BroadcastFrequencySpecification } from "./things/intangibles/broadcast_frequency_specification.ts";
 import { Comment } from "./things/creative_works/comments/comment.ts";
 import { BroadcastService } from "./things/intangibles/services/broadcast_services/broadcast_service.ts";
 import { Claim } from "./things/creative_works/claim.ts";
@@ -256,6 +257,7 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<Claim>>
     | DeepPartial<ArrayableWithoutSyntaxToken<BroadcastService>>
     | DeepPartial<ArrayableWithoutSyntaxToken<Comment>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<BroadcastFrequencySpecification>>
   );
 
 export default SchemaOrg;
