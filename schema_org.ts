@@ -1,3 +1,4 @@
+import { SoftwareApplication } from "./things/creative_works/software_applications/software_application.ts";
 import { BroadcastChannel } from "./things/intangibles/broadcast_channels/broadcast_channel.ts";
 import { CableOrSatelliteService } from "./things/intangibles/services/cable_or_satellite_service.ts";
 import { BroadcastFrequencySpecification } from "./things/intangibles/broadcast_frequency_specification.ts";
@@ -262,6 +263,7 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<BroadcastFrequencySpecification>>
     | DeepPartial<ArrayableWithoutSyntaxToken<CableOrSatelliteService>>
     | DeepPartial<ArrayableWithoutSyntaxToken<BroadcastChannel>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<SoftwareApplication>>
   );
 
 export default SchemaOrg;
