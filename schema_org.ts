@@ -1,3 +1,4 @@
+import { AlignmentObject } from "./things/intangibles/alignment_object.ts";
 import { InteractionCounter } from "./things/intangibles/structured_values/interaction_counter.ts";
 import { VirtualLocation } from "./things/intangibles/virtual_location.ts";
 import { CreativeWork } from "./things/creative_works/creative_work.ts";
@@ -246,6 +247,7 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<CreativeWork>>
     | DeepPartial<ArrayableWithoutSyntaxToken<VirtualLocation>>
     | DeepPartial<ArrayableWithoutSyntaxToken<InteractionCounter>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<AlignmentObject>>
   );
 
 export default SchemaOrg;
