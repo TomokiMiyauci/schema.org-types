@@ -1,3 +1,4 @@
+import { DataFeedItem } from "./things/creative_works/data_feed_item.ts";
 import { DataDownload } from "./things/creative_works/media_objects/data_download.ts";
 import { DataFeed } from "./things/creative_works/datasets/data_feeds/data_feed.ts";
 import { Dataset } from "./things/creative_works/datasets/dataset.ts";
@@ -272,6 +273,7 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<Dataset>>
     | DeepPartial<ArrayableWithoutSyntaxToken<DataFeed>>
     | DeepPartial<ArrayableWithoutSyntaxToken<DataDownload>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<DataFeedItem>>
   );
 
 export default SchemaOrg;
