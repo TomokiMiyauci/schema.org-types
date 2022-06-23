@@ -1,3 +1,4 @@
+import { BroadcastChannel } from "./things/intangibles/broadcast_channels/broadcast_channel.ts";
 import { CableOrSatelliteService } from "./things/intangibles/services/cable_or_satellite_service.ts";
 import { BroadcastFrequencySpecification } from "./things/intangibles/broadcast_frequency_specification.ts";
 import { Comment } from "./things/creative_works/comments/comment.ts";
@@ -260,6 +261,7 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<Comment>>
     | DeepPartial<ArrayableWithoutSyntaxToken<BroadcastFrequencySpecification>>
     | DeepPartial<ArrayableWithoutSyntaxToken<CableOrSatelliteService>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<BroadcastChannel>>
   );
 
 export default SchemaOrg;
