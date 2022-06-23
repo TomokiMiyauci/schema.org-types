@@ -1,3 +1,4 @@
+import { BroadcastService } from "./things/intangibles/services/broadcast_services/broadcast_service.ts";
 import { Claim } from "./things/creative_works/claim.ts";
 import { PublicationEvent } from "./things/events/publication_events/publication_event.ts";
 import { AlignmentObject } from "./things/intangibles/alignment_object.ts";
@@ -252,6 +253,7 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<AlignmentObject>>
     | DeepPartial<ArrayableWithoutSyntaxToken<PublicationEvent>>
     | DeepPartial<ArrayableWithoutSyntaxToken<Claim>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<BroadcastService>>
   );
 
 export default SchemaOrg;
