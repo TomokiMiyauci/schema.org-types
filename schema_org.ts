@@ -1,3 +1,4 @@
+import { InteractionCounter } from "./things/intangibles/structured_values/interaction_counter.ts";
 import { VirtualLocation } from "./things/intangibles/virtual_location.ts";
 import { CreativeWork } from "./things/creative_works/creative_work.ts";
 import { CorrectionComment } from "./things/creative_works/comments/correction_comment.ts";
@@ -244,6 +245,7 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<CorrectionComment>>
     | DeepPartial<ArrayableWithoutSyntaxToken<CreativeWork>>
     | DeepPartial<ArrayableWithoutSyntaxToken<VirtualLocation>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<InteractionCounter>>
   );
 
 export default SchemaOrg;
