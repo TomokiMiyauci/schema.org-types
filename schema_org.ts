@@ -1,3 +1,4 @@
+import { AboutPage } from "./things/creative_works/web_pages/about_page.ts";
 import { DataFeedItem } from "./things/creative_works/data_feed_item.ts";
 import { DataDownload } from "./things/creative_works/media_objects/data_download.ts";
 import { DataFeed } from "./things/creative_works/datasets/data_feeds/data_feed.ts";
@@ -116,7 +117,7 @@ import { MusicRelease } from "./things/creative_works/music_playlists/music_rele
 import { MusicAlbum } from "./things/creative_works/music_playlists/music_album.ts";
 import { Thing } from "./things/thing.ts";
 import { BreadcrumbList } from "./things/creative_works/item_lists/breadcrumb_list.ts";
-import { WebPage } from "./things/creative_works/web_page.ts";
+import { WebPage } from "./things/creative_works/web_pages/web_page.ts";
 import { Book } from "./things/creative_works/books/book.ts";
 import { Rating } from "./things/intangibles/ratings/rating.ts";
 import { AggregateRating } from "./things/intangibles/ratings/aggregate_ratings/aggregate_rating.ts";
@@ -274,6 +275,7 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<DataFeed>>
     | DeepPartial<ArrayableWithoutSyntaxToken<DataDownload>>
     | DeepPartial<ArrayableWithoutSyntaxToken<DataFeedItem>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<AboutPage>>
   );
 
 export default SchemaOrg;
