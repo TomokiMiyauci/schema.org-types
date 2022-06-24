@@ -1,3 +1,4 @@
+import { Organization } from "./things/organizations/organization.ts";
 import { AboutPage } from "./things/creative_works/web_pages/about_page.ts";
 import { DataFeedItem } from "./things/creative_works/data_feed_item.ts";
 import { DataDownload } from "./things/creative_works/media_objects/data_download.ts";
@@ -276,6 +277,7 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<DataDownload>>
     | DeepPartial<ArrayableWithoutSyntaxToken<DataFeedItem>>
     | DeepPartial<ArrayableWithoutSyntaxToken<AboutPage>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Organization>>
   );
 
 export default SchemaOrg;
