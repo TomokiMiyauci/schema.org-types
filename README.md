@@ -6,7 +6,10 @@ Definition of types of [Schema.org](https://schema.org/) with
 ## Example
 
 ```tsx
-import { SchemaOrg } from "https://deno.land/x/schema_org_types@$VERSION/mod.ts";
+import {
+  MEDIA_TYPE,
+  SchemaOrg,
+} from "https://deno.land/x/schema_org_types@$VERSION/mod.ts";
 const schemaOrg: SchemaOrg = {
   "@context": "https://schema.org",
   "@type": "Thing",
@@ -16,7 +19,7 @@ const schemaOrg: SchemaOrg = {
     name: "The Complete History of Schema.org",
   },
 };
-// <script type="application/ld+json">
+// <script type={MEDIA_TYPE}>
 //  {JSON.stringify(schemaOrg, null, 2)};
 // </script>;
 ```
