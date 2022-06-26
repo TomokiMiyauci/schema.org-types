@@ -1,3 +1,4 @@
+import { ProgramMembership } from "./things/intangibles/program_membership.ts";
 import { OwnershipInfo } from "./things/intangibles/structured_values/ownership_info.ts";
 import { Organization } from "./things/organizations/organization.ts";
 import { AboutPage } from "./things/creative_works/web_pages/about_page.ts";
@@ -280,6 +281,7 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<AboutPage>>
     | DeepPartial<ArrayableWithoutSyntaxToken<Organization>>
     | DeepPartial<ArrayableWithoutSyntaxToken<OwnershipInfo>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<ProgramMembership>>
   );
 
 export default SchemaOrg;
