@@ -1,15 +1,15 @@
-import { BreadcrumbList } from "./item_lists/breadcrumb_list.ts";
-import { CreativeWorkProps } from "./creative_work.ts";
-import { WebPageElementType } from "./web_page_elements/web_page_element.ts";
-import { Date, Text, URL } from "../../data_types.ts";
-import { ImageObjectType } from "./media_objects/image_objects/image_object.ts";
-import { Organization } from "../organizations/organization.ts";
-import { Person } from "../persons/person.ts";
-import { SpeakableSpecification } from "../intangibles/speakable_specification.ts";
-import { Specialty } from "../intangibles/enumerations/specialties/specialty.ts";
-import { ThingProps } from "../thing.ts";
+import { BreadcrumbList } from "../item_lists/breadcrumb_list.ts";
+import { CreativeWorkProps } from "../creative_work.ts";
+import { WebPageElementType } from "../web_page_elements/web_page_element.ts";
+import { Date, Text, URL } from "../../../data_types.ts";
+import { ImageObjectType } from "../media_objects/image_objects/image_object.ts";
+import { Organization } from "../../organizations/organization.ts";
+import { Person } from "../../persons/person.ts";
+import { SpeakableSpecification } from "../../intangibles/speakable_specification.ts";
+import { Specialty } from "../../intangibles/enumerations/specialties/specialty.ts";
+import { ThingProps } from "../../thing.ts";
 
-export default interface WebPageProps extends CreativeWorkProps, ThingProps {
+export interface WebPageProps extends CreativeWorkProps, ThingProps {
   /** A set of links that can help a user understand and navigate a website hierarchy.
    * @see https://schema.org/breadcrumb
    */
