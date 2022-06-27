@@ -1,3 +1,13 @@
+# [1.0.0-beta.6](https://github.com/TomokiMiyauci/schema.org-types/compare/1.0.0-beta.5...1.0.0-beta.6) (2022-06-27)
+
+
+### Features
+
+* **things:** add `Event` types ([7822018](https://github.com/TomokiMiyauci/schema.org-types/commit/78220184c27d0ba688b3aeef1b75f547b3744bb3))
+* **things:** add `Intangible` types ([428f3d9](https://github.com/TomokiMiyauci/schema.org-types/commit/428f3d9aaae2e4c50b0b815c203b43a88fbfa272))
+* **things:** add `Schedule` types ([a4870e4](https://github.com/TomokiMiyauci/schema.org-types/commit/a4870e4a9b84f0ac14c79e178951b77068607ea9))
+* **things:** add enumeration types ([0cbd771](https://github.com/TomokiMiyauci/schema.org-types/commit/0cbd7718eb4d4b1b8ac278a1dadb72e022cd2ea5))
+
 # [1.0.0-beta.5](https://github.com/TomokiMiyauci/schema.org-types/compare/1.0.0-beta.4...1.0.0-beta.5) (2022-06-27)
 
 
