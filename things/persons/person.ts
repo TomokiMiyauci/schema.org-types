@@ -329,7 +329,7 @@ export interface PersonProps extends ThingProps {
  * @see https://schema.org/Person
  */
 export interface Person extends PersonProps {
-  "@type": "Person.ts";
+  "@type": "Person";
 }
 
 export type PersonType = Person;
