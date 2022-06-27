@@ -3,7 +3,7 @@ import { Integer, Text } from "../../../data_types.ts";
 import { PostalAddress } from "./contact_points/postal_address.ts";
 import { PlaceType } from "../../places/place.ts";
 import { ActionType } from "../../actions/action.ts";
-import { WebPageType } from "../../creative_works/web_page.ts";
+import { WebPageType } from "../../creative_works/web_pages/web_page.ts";
 import { SoftwareApplicationType } from "../../creative_works/software_applications/software_application.ts";
 import { DateTime, Time } from "../../../data_types.ts";
 import { ThingProps } from "../../thing.ts";

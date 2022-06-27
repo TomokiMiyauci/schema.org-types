@@ -37,7 +37,7 @@ import { BookType } from "./books/book.ts";
 import { ItemListType } from "./item_lists/item_list.ts";
 import { PersonType } from "../persons/person.ts";
 import { AggregateRating } from "../intangibles/ratings/aggregate_ratings/aggregate_rating.ts";
-import { WebPageType } from "./web_page.ts";
+import { WebPageType } from "./web_pages/web_page.ts";
 import { DefinedTermType } from "../intangibles/defined_terms/defined_term.ts";
 import { MediaObjectType } from "./media_objects/media_object.ts";
 import { AudienceType } from "../intangibles/audiences/audience.ts";
