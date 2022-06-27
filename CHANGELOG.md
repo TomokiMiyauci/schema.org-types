@@ -1,3 +1,27 @@
+# [1.0.0-beta.5](https://github.com/TomokiMiyauci/schema.org-types/compare/1.0.0-beta.4...1.0.0-beta.5) (2022-06-27)
+
+
+### Features
+
+* export media type for JSON-LD ([93981f4](https://github.com/TomokiMiyauci/schema.org-types/commit/93981f42d6c87f2fbac157ea8ad0b4eb41fb817e))
+* **things:** add `AboutPage` types ([ac2b8bd](https://github.com/TomokiMiyauci/schema.org-types/commit/ac2b8bd5c7ea34b9b1d234fbf9e718f9fb0586fa))
+* **things:** add `Action` types ([cca3cc7](https://github.com/TomokiMiyauci/schema.org-types/commit/cca3cc7f938f395f9aa8b5a68582954f1e3e3bad))
+* **things:** add `Article` types ([a723556](https://github.com/TomokiMiyauci/schema.org-types/commit/a723556e128372c96ef82c48c3731f845c1b6746))
+* **things:** add `CivicStructure` types ([50d170e](https://github.com/TomokiMiyauci/schema.org-types/commit/50d170e3714ca6a7299e46bf83248674d27d94a5))
+* **things:** add `EducationalOccupationalCredential` types ([0944a97](https://github.com/TomokiMiyauci/schema.org-types/commit/0944a973423c26df997e81f1e84548565865bef3))
+* **things:** add `EducationalOrganization` types ([26fd925](https://github.com/TomokiMiyauci/schema.org-types/commit/26fd925ff94f6869e907b10d81e10cf9adf6b728))
+* **things:** add `EntryPoint` types ([216e15d](https://github.com/TomokiMiyauci/schema.org-types/commit/216e15d1b5c2938f81e931c04a4be0f0d78cccbe))
+* **things:** add `MonetaryAmountDistribution` types ([7111293](https://github.com/TomokiMiyauci/schema.org-types/commit/71112935f4e79347e41e71abeb06a83bbdb05c0a))
+* **things:** add `Occupation` types ([6dbbe50](https://github.com/TomokiMiyauci/schema.org-types/commit/6dbbe50ab33ebbaca5c43a4d6b0536d67aca12e8))
+* **things:** add `OccupationalExperienceRequirements` types ([4957dac](https://github.com/TomokiMiyauci/schema.org-types/commit/4957dac12d641c78bc1d48033e4b9103b222605d))
+* **things:** add `Organization` types ([93d9272](https://github.com/TomokiMiyauci/schema.org-types/commit/93d9272117315a72d4edb8fc67c758d499f9a12b))
+* **things:** add `OwnershipInfo` types ([26452b8](https://github.com/TomokiMiyauci/schema.org-types/commit/26452b85298613c0fe5ad70e0086db6a0c623289))
+* **things:** add `Person` types ([aa71184](https://github.com/TomokiMiyauci/schema.org-types/commit/aa7118467a687999ab5feeb4315ad549b31cb581))
+* **things:** add `ProgramMembership` types ([904cafe](https://github.com/TomokiMiyauci/schema.org-types/commit/904cafec4333390f928ccd389ff594c67e0ce7de))
+* **things:** add `QuantitativeValueDistribution` types ([13d7271](https://github.com/TomokiMiyauci/schema.org-types/commit/13d7271d13f51f163b5505423d37705283c64a37))
+* **things:** add enumeration types ([bcabd9d](https://github.com/TomokiMiyauci/schema.org-types/commit/bcabd9da794756b78382229c383690a4091b170b))
+* **things:** add enumration types ([bf76fd4](https://github.com/TomokiMiyauci/schema.org-types/commit/bf76fd4421a2a257b48122d1c7c2ca527f783283))
+
 # [1.0.0-beta.4](https://github.com/TomokiMiyauci/schema.org-types/compare/1.0.0-beta.3...1.0.0-beta.4) (2022-06-23)
 
 
