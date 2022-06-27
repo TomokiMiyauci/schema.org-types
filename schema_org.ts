@@ -1,3 +1,4 @@
+import { SocialMediaPosting } from "./things/creative_works/articles/social_media_postings/social_media_posting.ts";
 import { BlogPosting } from "./things/creative_works/articles/social_media_postings/blog_postings/blog_posting.ts";
 import { Blog } from "./things/creative_works/blog.ts";
 import { Schedule } from "./things/intangibles/schedule.ts";
@@ -318,6 +319,7 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<Schedule>>
     | DeepPartial<ArrayableWithoutSyntaxToken<Blog>>
     | DeepPartial<ArrayableWithoutSyntaxToken<BlogPosting>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<SocialMediaPosting>>
   );
 
 export default SchemaOrg;
