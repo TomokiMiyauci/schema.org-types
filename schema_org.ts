@@ -1,3 +1,4 @@
+import { EntryPoint } from "./things/intangibles/entry_point.ts";
 import { Action } from "./things/actions/action.ts";
 import { EducationalOccupationalCredential } from "./things/creative_works/educational_occupational_credential.ts";
 import { Article } from "./things/creative_works/articles/article.ts";
@@ -286,8 +287,11 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<OwnershipInfo>>
     | DeepPartial<ArrayableWithoutSyntaxToken<ProgramMembership>>
     | DeepPartial<ArrayableWithoutSyntaxToken<Article>>
-    | DeepPartial<EducationalOccupationalCredential>
-    | DeepPartial<Action>
+    | DeepPartial<
+      ArrayableWithoutSyntaxToken<EducationalOccupationalCredential>
+    >
+    | DeepPartial<ArrayableWithoutSyntaxToken<Action>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<EntryPoint>>
   );
 
 export default SchemaOrg;
