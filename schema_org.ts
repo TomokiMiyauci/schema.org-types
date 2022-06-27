@@ -1,3 +1,4 @@
+import { Blog } from "./things/creative_works/blog.ts";
 import { Schedule } from "./things/intangibles/schedule.ts";
 import { Event } from "./things/events/event.ts";
 import { Intangible } from "./things/intangibles/intangible.ts";
@@ -314,6 +315,7 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<Intangible>>
     | DeepPartial<ArrayableWithoutSyntaxToken<Event>>
     | DeepPartial<ArrayableWithoutSyntaxToken<Schedule>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<Blog>>
   );
 
 export default SchemaOrg;
