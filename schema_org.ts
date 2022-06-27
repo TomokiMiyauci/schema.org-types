@@ -1,3 +1,4 @@
+import { CivicStructure } from "./things/places/civic_structures/civic_structure.ts";
 import { Person } from "./things/persons/person.ts";
 import { EntryPoint } from "./things/intangibles/entry_point.ts";
 import { Action } from "./things/actions/action.ts";
@@ -294,6 +295,7 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<Action>>
     | DeepPartial<ArrayableWithoutSyntaxToken<EntryPoint>>
     | DeepPartial<ArrayableWithoutSyntaxToken<Person>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<CivicStructure>>
   );
 
 export default SchemaOrg;
