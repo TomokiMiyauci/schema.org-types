@@ -13,7 +13,6 @@ export interface HealthInsurancePlanProps extends ThingProps {
 
   /** A contact point for a person or organization.
    * @see https://schema.org/contactPoint
-   * @deprecated
    */
   contactPoint: ContactPointType;
 
