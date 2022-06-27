@@ -1,3 +1,4 @@
+import { SomeProducts } from "./things/products/some_products.ts";
 import { ProductCollection } from "./things/products/product_collection.ts";
 import { IndividualProduct } from "./things/products/individual_product.ts";
 import { Collection } from "./things/creative_works/collections/collection.ts";
@@ -328,6 +329,7 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<Collection>>
     | DeepPartial<ArrayableWithoutSyntaxToken<IndividualProduct>>
     | DeepPartial<ArrayableWithoutSyntaxToken<ProductCollection>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<SomeProducts>>
   );
 
 export default SchemaOrg;
