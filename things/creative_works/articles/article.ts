@@ -1,6 +1,6 @@
 import { SpeakableSpecification } from "../../intangibles/speakable_specification.ts";
 import { CreativeWorkType } from "../creative_work.ts";
-import { Integer, Text } from "../../../data_types.ts";
+import { Integer, Text, URL } from "../../../data_types.ts";
 import { CreativeWorkProps } from "../creative_work.ts";
 import { ThingProps } from "../../thing.ts";
 
