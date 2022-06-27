@@ -1,3 +1,4 @@
+import { Intangible } from "./things/intangibles/intangible.ts";
 import { OccupationalExperienceRequirements } from "./things/intangibles/occupational_experience_requirements.ts";
 import { MonetaryAmountDistribution } from "./things/intangibles/structured_values/quantitative_value_distributions/monetary_amount_distribution.ts";
 import { QuantitativeValueDistribution } from "./things/intangibles/structured_values/quantitative_value_distributions/quantitative_value_distribution.ts";
@@ -308,6 +309,7 @@ type SchemaOrg =
     | DeepPartial<
       ArrayableWithoutSyntaxToken<OccupationalExperienceRequirements>
     >
+    | DeepPartial<ArrayableWithoutSyntaxToken<Intangible>>
   );
 
 export default SchemaOrg;
