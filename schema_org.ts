@@ -1,3 +1,4 @@
+import { EngineSpecification } from "./things/intangibles/structured_values/engine_specification.ts";
 import { Vehicle } from "./things/products/vehicles/vehicle.ts";
 import { SomeProducts } from "./things/products/some_products.ts";
 import { ProductCollection } from "./things/products/product_collection.ts";
@@ -332,6 +333,7 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<ProductCollection>>
     | DeepPartial<ArrayableWithoutSyntaxToken<SomeProducts>>
     | DeepPartial<ArrayableWithoutSyntaxToken<Vehicle>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<EngineSpecification>>
   );
 
 export default SchemaOrg;
