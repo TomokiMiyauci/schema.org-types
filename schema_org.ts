@@ -1,3 +1,5 @@
+import { ArchiveComponent } from "./things/creative_works/archive_component.ts";
+import { ArchiveOrganization } from "./things/organizations/local_businesses/archive_organization.ts";
 import { LocalBusiness } from "./things/organizations/local_businesses/local_business.ts";
 import { TouristAttraction } from "./things/places/tourist_attraction.ts";
 import { TouristDestination } from "./things/places/tourist_destination.ts";
@@ -348,6 +350,8 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<TouristDestination>>
     | DeepPartial<ArrayableWithoutSyntaxToken<LocalBusiness>>
     | DeepPartial<ArrayableWithoutSyntaxToken<TouristAttraction>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<ArchiveOrganization>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<ArchiveComponent>>
   );
 
 export default SchemaOrg;
