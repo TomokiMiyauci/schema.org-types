@@ -1,3 +1,6 @@
+import { LocalBusiness } from "./things/organizations/local_businesses/local_business.ts";
+import { TouristAttraction } from "./things/places/tourist_attraction.ts";
+import { TouristDestination } from "./things/places/tourist_destination.ts";
 import { MotorizedBicycle } from "./things/products/vehicles/motorcycle.ts";
 import { Motorcycle } from "./things/products/vehicles/motorized_bicycle.ts";
 import { Car } from "./things/products/vehicles/car.ts";
@@ -342,6 +345,9 @@ type SchemaOrg =
     | DeepPartial<ArrayableWithoutSyntaxToken<Car>>
     | DeepPartial<ArrayableWithoutSyntaxToken<Motorcycle>>
     | DeepPartial<ArrayableWithoutSyntaxToken<MotorizedBicycle>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<TouristDestination>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<LocalBusiness>>
+    | DeepPartial<ArrayableWithoutSyntaxToken<TouristAttraction>>
   );
 
 export default SchemaOrg;
