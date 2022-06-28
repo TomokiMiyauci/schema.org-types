@@ -1,4 +1,4 @@
-import { Text } from "../../../data_types.ts";
+import { Text, URL } from "../../../data_types.ts";
 import { QualitativeValueType } from "../enumerations/qualitative_values/qualitative_value.ts";
 import { QuantitativeValue } from "./quantitative_value.ts";
 import { ThingProps } from "../../thing.ts";
