@@ -1,3 +1,25 @@
+# [1.0.0-beta.7](https://github.com/TomokiMiyauci/schema.org-types/compare/1.0.0-beta.6...1.0.0-beta.7) (2022-06-28)
+
+
+### Features
+
+* **things:** add `ArchiveComponent` and `ArchiveOrganization` types ([95376ef](https://github.com/TomokiMiyauci/schema.org-types/commit/95376ef178847dc0877ad3edf3ff51d902c52b9c))
+* **things:** add `Blog` types ([e5a9a05](https://github.com/TomokiMiyauci/schema.org-types/commit/e5a9a05bb7b54beab8eed5077ef579b3fa9df297))
+* **things:** add `BlogPosting` types ([a3e5a82](https://github.com/TomokiMiyauci/schema.org-types/commit/a3e5a823daf3d0b24d71eaabfc7a41daf53fe279))
+* **things:** add `Collection` types ([43be7c3](https://github.com/TomokiMiyauci/schema.org-types/commit/43be7c36343f96cb22ffce2bb538f83b177edcad))
+* **things:** add `EngineSpecification` types ([b24abe0](https://github.com/TomokiMiyauci/schema.org-types/commit/b24abe081d14e022d97ddb511196b16823fd0956))
+* **things:** add `IndividualProduct` types ([8136cc5](https://github.com/TomokiMiyauci/schema.org-types/commit/8136cc52803c084de02cb9e33a676dd82a1d77e9))
+* **things:** add `LiveBlogPosting` types ([69e5505](https://github.com/TomokiMiyauci/schema.org-types/commit/69e550538118a9ce82956fea4074a0fae1278e57))
+* **things:** add `LocalBusiness` types ([43d6dd2](https://github.com/TomokiMiyauci/schema.org-types/commit/43d6dd21ca113a817fe40442803aad737a268ebb))
+* **things:** add `ProductCollection` types ([5c2fab3](https://github.com/TomokiMiyauci/schema.org-types/commit/5c2fab38b91f1ce3b39fddd062732b8fc0fa02eb))
+* **things:** add `SocialMediaPosting` types ([772d746](https://github.com/TomokiMiyauci/schema.org-types/commit/772d746c0917db527f6880795fce494d9462e3f8))
+* **things:** add `SomeProducts` types ([97ef109](https://github.com/TomokiMiyauci/schema.org-types/commit/97ef1093837d8b05935c7a4087f458ed58c17fad))
+* **things:** add `TouristAttraction` and `TouristDestination` types ([149e97d](https://github.com/TomokiMiyauci/schema.org-types/commit/149e97de553d59ee5b20995aef89eb184ef6b4c8))
+* **things:** add `Vehicle` sub types ([2149ea5](https://github.com/TomokiMiyauci/schema.org-types/commit/2149ea5b0ab76d85a3a483ecdb67cb973c0786e2))
+* **things:** add `Vehicle` types ([88c484f](https://github.com/TomokiMiyauci/schema.org-types/commit/88c484ff18c836754412faf3bad4efa5ad476b66))
+* **things:** add `WebSite` types ([b9eda0f](https://github.com/TomokiMiyauci/schema.org-types/commit/b9eda0f63fe8e3d6b4df5844e4542c2cea95749d))
+* **things:** add enumeration types ([aa9daf7](https://github.com/TomokiMiyauci/schema.org-types/commit/aa9daf71a962fdec952a0dd012880a0ede913b8c))
+
 # [1.0.0-beta.6](https://github.com/TomokiMiyauci/schema.org-types/compare/1.0.0-beta.5...1.0.0-beta.6) (2022-06-27)
 
 
